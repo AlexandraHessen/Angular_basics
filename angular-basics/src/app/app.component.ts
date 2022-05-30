@@ -10,4 +10,15 @@ export class AppComponent {
   number = 42;
   arr =[1, 2, 3];
   obj = {a:1, b:2}
+
+  img = "https://i0.wp.com/www.primefaces.org/wp-content/uploads/2017/09/feature-react.png?ssl=1"
+
+  constructor(){
+    setTimeout(()=>{
+      this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
+    }, 5000
+
+    )
+  }
+
 }
