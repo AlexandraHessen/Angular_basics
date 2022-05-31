@@ -69,3 +69,10 @@
 [class.blue]="!backgroundToggle"
 [class.red] ="backgroundToggle"
 >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos totam quae assumenda. Aliquid ipsam, obcaecati impedit quis, sed, aut quas itaque facere commodi voluptas rerum velit. Voluptatum saepe officiis cum.</p>
+
+<hr>
+
+<button (click)="toggle=!toggle">Toggle</button>
+
+<p *ngIf="toggle" class="red">Lorem ipsum dolor</p>
+<p *ngIf="!toggle" class="blue">Lorem ipsum dolor</p>

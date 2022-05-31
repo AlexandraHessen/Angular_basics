@@ -19,6 +19,8 @@ export class AppComponent {
 
   backgroundToggle = false
 
+  toggle = false
+
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
