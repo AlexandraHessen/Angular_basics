@@ -34,6 +34,7 @@ export class AppComponent {
 
   onInput(event:Event){
     this.inputValue = (<HTMLInputElement>event.target).value
+
   }
 
   onClick(){
@@ -44,14 +45,9 @@ export class AppComponent {
     this.inputValue = str
   }
 
-  // inputTest(event:Event){
-  //   console.log(event);
-  //   this.val=event.target.value
-  // }
-
-  inputTest(event:any){
+  inputTest(event:Event){
     console.log(event);
-    this.val=event.target.value
+    this.val=(<HTMLInputElement>event.target).value
   }
 
 }
