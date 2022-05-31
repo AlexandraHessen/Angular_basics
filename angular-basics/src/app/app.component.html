@@ -10,10 +10,10 @@
 <p>{{title}}</p>
 <p>{{number*2}}</p>
 <p>{{arr}}</p>
-<p>{{obj}}</p> //[obj]
-<p>{{obj.a}}</p> //1
-<p>{{40+2}}</p> //42
-<p>{{ "Hello" }}</p> //Hello
+<p>{{obj}}</p>
+<p>{{obj.a}}</p>
+<p>{{40+2}}</p>
+<p>{{ "Hello" }}</p>
 <!-- <p>{{Hello}}</p> //Error -->
 </div>
 <app-post></app-post>
@@ -25,7 +25,19 @@
 
 <hr>
 <!-- <input type="text" (input)="onInput($event)"> -->
-<input type="text" (keyup)="onInput($event)">
+<!-- <input type="text" (keyup)="onInput($event)"> -->
+<!-- <input type="text" (input)="onInput($event)" (keyup.enter)="onInput($event)"> -->
+<!-- <input
+  type="text"
+  (input)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+> -->
+<input
+  type="text"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+>
 <p><strong>{{inputValue}}</strong></p>
 
 <button (click)="onClick()">Click me!</button>

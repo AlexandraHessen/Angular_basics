@@ -28,12 +28,15 @@ export class AppComponent {
   // }
 
   onInput(event:KeyboardEvent){
-    console.log(event);
     this.inputValue = (<HTMLInputElement>event.target).value
   }
 
   onClick(){
     console.log("click");
+  }
+
+  onBlur(str: string){
+    this.inputValue = str
   }
 
 }
