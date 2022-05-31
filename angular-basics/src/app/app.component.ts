@@ -13,12 +13,27 @@ export class AppComponent {
 
   img = "https://i0.wp.com/www.primefaces.org/wp-content/uploads/2017/09/feature-react.png?ssl=1"
 
+  inputValue=""
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
     }, 5000
 
     )
+  }
+
+  onInput(event:any){
+    console.log(event);
+    this.inputValue = event.target.value
+  }
+
+  // onInput(event:KeyboardEvent){
+  //   console.log(event);
+  //   this.inputValue = (<HTMLInputElement>event.target).value
+  // }
+
+  onClick(){
+    console.log("click");
   }
 
 }
