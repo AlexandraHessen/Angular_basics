@@ -22,15 +22,15 @@ export class AppComponent {
     )
   }
 
-  onInput(event:any){
-    console.log(event);
-    this.inputValue = event.target.value
-  }
-
-  // onInput(event:KeyboardEvent){
+  // onInput(event:any){
   //   console.log(event);
-  //   this.inputValue = (<HTMLInputElement>event.target).value
+  //   this.inputValue = event.target.value
   // }
+
+  onInput(event:KeyboardEvent){
+    console.log(event);
+    this.inputValue = (<HTMLInputElement>event.target).value
+  }
 
   onClick(){
     console.log("click");

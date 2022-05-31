@@ -24,8 +24,8 @@
 <img [src]="img" alt="">
 
 <hr>
-<input type="text" (input)="onInput($event)">
-<!-- <input type="text" (keyup)="onInput($event)"> -->
+<!-- <input type="text" (input)="onInput($event)"> -->
+<input type="text" (keyup)="onInput($event)">
 <p><strong>{{inputValue}}</strong></p>
 
 <button (click)="onClick()">Click me!</button>
