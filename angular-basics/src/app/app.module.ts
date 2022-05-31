@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
@@ -14,8 +15,10 @@ import { Post4Component } from './post4/post4.component';
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent] //указываем какой компонент является главным
 })

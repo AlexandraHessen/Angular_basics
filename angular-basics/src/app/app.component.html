@@ -41,7 +41,9 @@
 
 <hr>
 
-<input type="text" [value]="val" (input)="inputTest($event)">
+<!-- <input type="text" [value]="val" (input)="inputTest($event)"> -->
+<input type="text" [(ngModel)]="val">
 <p>{{val}}</p>
 
+<hr>
 
