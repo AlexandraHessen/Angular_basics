@@ -96,11 +96,27 @@
 
 <hr>
 
-<ul>
-  <li *ngFor="let number of arrNumber; let i = index">
+<!-- <ul>
+  <li *ngFor="let number of arrNumber; let i = index"> -->
     <!-- какая длина массива столько элементов li и будет -->
     <!-- let i = index делаем если нужнен индекс, index- ключевое слово -->
     <!-- {{i + 1}} для того чтобы начиналось с 1 -->
-    {{i + 1}}<strong>{{number}}</strong>
+    <!-- {{i + 1}}<strong>{{number}}</strong>
+  </li>
+</ul> -->
+
+<ul style="list-style: none">
+  <li *ngFor="let post of objs">
+    <p>{{post.title}}</p>
+    <b>{{post.author}}</b>
+    <ul>
+      <li *ngFor="let comment of post.comments">
+        <div>
+          <small>{{comment.name}}</small>
+          <p>{{comment.text}}</p>
+        </div>
+      </li>
+    </ul>
+
   </li>
 </ul>

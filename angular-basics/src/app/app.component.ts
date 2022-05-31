@@ -23,6 +23,20 @@ export class AppComponent {
 
   arrNumber = [1, 1, 2, 3, 5, 8]
 
+  objs=[
+    {title: 'Post 1 ', author: 'Vladilen', comments: [
+      {name: 'Max', text: 'lorem 1'},
+      {name: 'Max', text: 'lorem 2'},
+      {name: 'Max', text: 'lorem 3'},
+    ]},
+    {title: 'Post 2 ', author: 'Vladilen2', comments: [
+      {name: 'Max2', text: 'lorem 1'},
+      {name: 'Max2', text: 'lorem 2'},
+      {name: 'Max2', text: 'lorem 3'},
+    ]}
+
+  ]
+
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
