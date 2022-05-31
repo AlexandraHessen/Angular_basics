@@ -37,6 +37,8 @@ export class AppComponent {
 
   ]
 
+  now:Date = new Date()
+
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
