@@ -21,6 +21,8 @@ export class AppComponent {
 
   toggle = false
 
+  arrNumber = [1, 1, 2, 3, 5, 8]
+
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
@@ -51,5 +53,7 @@ export class AppComponent {
     console.log(event);
     this.val=(<HTMLInputElement>event.target).value
   }
+
+
 
 }

@@ -93,3 +93,14 @@
   <p *ngSwitchDefault>Lorem ipsum</p>
 
 </div>
+
+<hr>
+
+<ul>
+  <li *ngFor="let number of arrNumber; let i = index">
+    <!-- какая длина массива столько элементов li и будет -->
+    <!-- let i = index делаем если нужнен индекс, index- ключевое слово -->
+    <!-- {{i + 1}} для того чтобы начиналось с 1 -->
+    {{i + 1}}<strong>{{number}}</strong>
+  </li>
+</ul>
