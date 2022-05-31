@@ -1,6 +1,8 @@
 <div>
-  <input type="text" class="form-control" placeholder="Title...">
+  <input type="text" #titleInput class="form-control" placeholder="Title...">
   <input type="text" class="form-control" placeholder="Text...">
 
   <button>Add post</button>
+
+  <button (click)="focusTitle()">Focus title</button>
 </div>
