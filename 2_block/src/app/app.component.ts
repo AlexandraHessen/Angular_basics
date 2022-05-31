@@ -14,7 +14,7 @@ export interface Post{
 export class AppComponent implements OnInit{
   posts: Post[] =[         //Post[] тип - массив объектов класса Post
     {title: 'Хочу выучить ', text: 'Я все еще', id: 1},
-    // {title: 'Следующий блок', text: 'Будет про', id: 2}
+    {title: 'Следующий блок', text: 'Будет про', id: 2}
   ]
 
   ngOnInit(): void {
