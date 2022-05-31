@@ -27,7 +27,7 @@ export class AppComponent {
   //   this.inputValue = event.target.value
   // }
 
-  onInput(event:KeyboardEvent){
+  onInput(event:Event){
     this.inputValue = (<HTMLInputElement>event.target).value
   }
 
