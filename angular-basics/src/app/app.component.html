@@ -60,7 +60,12 @@
 
 <hr>
 
-<p [ngClass]="{
+<!-- <p [ngClass]="{
   red: backgroundToggle,
   blue: !backgroundToggle
-}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quod quos, inventore nesciunt distinctio vero. Quae temporibus odio dicta quos distinctio explicabo voluptas natus velit iste! Laborum expedita ab aliquam?</p>
+}">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quod quos, inventore nesciunt distinctio vero. Quae temporibus odio dicta quos distinctio explicabo voluptas natus velit iste! Laborum expedita ab aliquam?</p> -->
+
+<p
+[class.blue]="!backgroundToggle"
+[class.red] ="backgroundToggle"
+>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos totam quae assumenda. Aliquid ipsam, obcaecati impedit quis, sed, aut quas itaque facere commodi voluptas rerum velit. Voluptatum saepe officiis cum.</p>
