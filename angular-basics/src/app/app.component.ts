@@ -14,6 +14,9 @@ export class AppComponent {
   img = "https://i0.wp.com/www.primefaces.org/wp-content/uploads/2017/09/feature-react.png?ssl=1"
 
   inputValue=""
+
+  val="test"
+
   constructor(){
     setTimeout(()=>{
       this.img="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg"
@@ -37,6 +40,16 @@ export class AppComponent {
 
   onBlur(str: string){
     this.inputValue = str
+  }
+
+  // inputTest(event:Event){
+  //   console.log(event);
+  //   this.val=event.target.value
+  // }
+
+  inputTest(event:any){
+    console.log(event);
+    this.val=event.target.value
   }
 
 }
