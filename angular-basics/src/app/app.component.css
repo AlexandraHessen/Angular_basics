@@ -1,9 +1,11 @@
-.red{
+.red {
   background: red;
   font-weight: bold;
+  color: #fff;
 }
 
-.blue{
+.blue {
   background: blue;
   font-size: 1.5rem;
+  color: #fff;
 }
