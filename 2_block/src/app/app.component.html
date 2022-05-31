@@ -8,11 +8,14 @@
   <!-- p - объект в массиве posts {title: 'Хочу выучить ', text: 'Я все еще', id: 1} -->
   <app-post *ngFor="let p of posts" [post]="p">
 
-    <!-- внутри компонента задем условие -->
-    <small *ngIf="p.text.length>10; else short">Post long</small>
-    <ng-template #short>
-      <small>Post short</small>
-    </ng-template>
+    <div #info>
+      <!-- внутри компонента задем условие -->
+      <small *ngIf="p.text.length>10; else short">Post long</small>
+      <ng-template #short>
+        <small>Post short</small>
+      </ng-template>
+    </div>
+
 
   </app-post>
 
