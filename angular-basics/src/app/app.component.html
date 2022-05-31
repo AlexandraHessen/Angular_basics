@@ -79,8 +79,17 @@
 <p *ngIf="!toggle" class="blue">Lorem ipsum dolor</p> -->
 
 <!-- **********  ngIf  else ************* -->
-<p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor</p>
+<!-- <p *ngIf="toggle; else blueP" class="red">Lorem ipsum dolor</p>
 
 <ng-template #blueP>
   <p *ngIf="!toggle" class="blue">Lorem ipsum dolor</p>
-</ng-template>
+</ng-template> -->
+
+<!-- **********  ngSwitch ************* -->
+
+<div [ngSwitch]="toggle">
+  <p *ngSwitchCase="true" class="red">Lorem ipsum </p>
+  <p *ngSwitchCase="false" class="blue">Lorem ipsum</p>
+  <p *ngSwitchDefault>Lorem ipsum</p>
+
+</div>
