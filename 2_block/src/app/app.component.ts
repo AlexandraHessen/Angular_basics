@@ -11,6 +11,7 @@ export interface Post{
   templateUrl: './app.component.html', //верстка компонента
   styleUrls: ['./app.component.scss'] //стили компонента
 })
+
 export class AppComponent implements OnInit{
   posts: Post[] =[         //Post[] тип - массив объектов класса Post
     {title: 'Хочу выучить ', text: 'Я все еще', id: 1},

@@ -7,12 +7,13 @@
 
   <hr>
 
-  <!-- p - объект в массиве posts {title: 'Хочу выучить ', text: 'Я все еще', id: 1} -->
-  <app-post *ngFor="let p of posts" [post]="p">
+  <!-- dataObjInPosts - объект в массиве posts {title: 'Хочу выучить ', text: 'Я все еще', id: 1} -->
+  <!-- [post]  - под именем [post] мы передаем переменную равную dataObjInPosts ({title: 'Хочу выучить)  в дочерний компонент -->
+  <app-post *ngFor="let dataObjInPosts of posts" [post]="dataObjInPosts">
 
     <div #info>
       <!-- внутри компонента задем условие -->
-      <small *ngIf="p.text.length>10; else short">Post long</small>
+      <small *ngIf="dataObjInPosts.text.length>10; else short">Post long</small>
       <ng-template #short>
         <small>Post short</small>
       </ng-template>
