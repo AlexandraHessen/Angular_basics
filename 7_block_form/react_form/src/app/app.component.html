@@ -2,11 +2,19 @@
   <form class="card" [formGroup]="form" (ngSubmit)="submit()">
 
     <h1>Angular Forms</h1>
+    <pre>{{form.get('email').errors |json}}</pre>
 
     <div class="form-control">
       <label>Email</label>
       <input type="text" placeholder="Email" formControlName="email">
-      <div class="validation"></div>
+      <div class="validation">
+        <small *ngIf="form.get('email').errors.required">
+          required
+        </small>
+        <small *ngIf="form.get('email').errors.email">
+          Correct email
+        </small>
+      </div>
     </div>
 
     <button type="submite">Отправить</button>
