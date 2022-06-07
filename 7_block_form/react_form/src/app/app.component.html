@@ -1,11 +1,14 @@
 <div class="container">
-  <form class="card">
+  <form class="card" [formGroup]="form" (ngSubmit)="submit()">
+
     <h1>Angular Forms</h1>
 
     <div class="form-control">
       <label>Email</label>
-      <input type="text" placeholder="Email">
+      <input type="text" placeholder="Email" formControlName="email">
       <div class="validation"></div>
     </div>
+
+    <button type="submite">Отправить</button>
   </form>
 </div>
