@@ -3,21 +3,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-hello-component [config]="config"></app-hello-component>
-    <button (click)="onClick()">Click</button>
+    <app-hello-component [post]="post"></app-hello-component>
+    <button (click)="onClick()">Change title</button>
   `
 })
 export class AppComponent {
-  config = {
-    position: 'top'
+  post = {
+    title: 'Hello, world!'
   };
 
   // onClick() {
-  //   this.config.position = 'bottom';
+  //   this.post.title = 'Hello, Angular!';
   // }
   onClick() {
-    this.config = {
-      position: 'bottom'
+    this.post = {
+      title: 'Hello, Angular!'
     }
   }
 }
