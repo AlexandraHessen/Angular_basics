@@ -3,21 +3,21 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-hello-component [post]="post"></app-hello-component>
-    <button (click)="onClick()">Change title</button>
+    <strategy-component [strategy]="strategy"></strategy-component>
+    <button (click)="onClick()">Change strategy</button>
   `
 })
 export class AppComponent {
-  post = {
-    title: 'Hello, world!'
+  strategy = {
+    title: 'ChangeDetectionStrategy.Default',
   };
 
   // onClick() {
-  //   this.post.title = 'Hello, Angular!';
+  //   this.strategy.title = 'ChangeDetectionStrategy.OnPush';
   // }
   onClick() {
-    this.post = {
-      title: 'Hello, Angular!'
+    this.strategy = {
+      title: 'ChangeDetectionStrategy.OnPush',
     }
   }
 }

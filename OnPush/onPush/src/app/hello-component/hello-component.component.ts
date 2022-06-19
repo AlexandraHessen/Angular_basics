@@ -1,15 +1,15 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
-  selector: 'app-hello-component',
+  selector: 'strategy-component',
   template: `
-    <h1>{{post.title}}</h1>
+    <h1>{{strategy.title}}</h1>
     {{runChangeDetection}}
   `,
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HelloComponentComponent {
-  @Input() post:any;
+export class StrategyComponent {
+  @Input() strategy:any;
   get runChangeDetection() {
     console.log('Checking the view');
     return '';
