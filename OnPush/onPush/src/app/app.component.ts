@@ -12,7 +12,12 @@ export class AppComponent {
     position: 'top'
   };
 
+  // onClick() {
+  //   this.config.position = 'bottom';
+  // }
   onClick() {
-    this.config.position = 'bottom';
+    this.config = {
+      position: 'bottom'
+    }
   }
 }
