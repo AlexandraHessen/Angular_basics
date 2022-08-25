@@ -10,6 +10,22 @@ export class AppComponent {
   number = 42;
   arr =[1, 2, 3];
   obj = {a:1, b:2}
+  color: 5;
+
+  car: string = 'Audi'
+
+  cars: any[] = [
+    {name: 'Audi', year: 2018},
+    {name: 'BMW', year: 2015},
+    {name: 'Mercedes', year: 2016}
+  ];
+
+  
+  elementStyles: any = {
+    color: 'red',
+    opacity: 0.5,
+  }
+
 
   img = "https://i0.wp.com/www.primefaces.org/wp-content/uploads/2017/09/feature-react.png?ssl=1"
 
@@ -68,6 +84,9 @@ export class AppComponent {
   inputTest(event:Event){
     console.log(event);
     this.val=(<HTMLInputElement>event.target).value
+
+
+
   }
 
 

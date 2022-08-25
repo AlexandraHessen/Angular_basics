@@ -1,3 +1,17 @@
+
+
+
+
+<div *ngIf="true">This will be added to the DOM</div>
+<div *ngIf="false">This will be removed from the DOM</div>
+
+
+<div [ngStyle]="{color: 5 < 10 ? 'green' ? 'red' }">
+  Some text
+</div>
+
+
+
 <div>
   <img
   width="40"
@@ -127,3 +141,6 @@
   {{now | date}}
   {{now | date: 'long' | uppercase}}
 </p>
+
+<div *ngIf="true">This will be added to the DOM</div>
+<div *ngIf="false">This will be removed from the DOM</div>
