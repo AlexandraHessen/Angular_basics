@@ -1,0 +1,13 @@
+
+<p *while="condition">
+  Первый параграф
+</p>
+<p *while="!condition">
+  Второй параграф
+</p>
+<button (click)="toggle()">Toggle</button>
+
+
+<p [zoom]="20">Hover text to make it larger.</p>
+
+{{interval$ | async}}
