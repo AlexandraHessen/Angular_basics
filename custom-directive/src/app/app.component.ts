@@ -15,15 +15,15 @@ export class AppComponent {
   interval$ = interval(1000)
 }
 
-import { Component } from '@angular/core';
-import { interval } from 'rxjs';
+// import { Component } from '@angular/core';
+// import { interval } from 'rxjs';
 
-@Component({
-  selector: 'my-app',
-  template: `: {{interval$ | async}}`
-})
-export class AppComponent {
-  interval$ = interval(1000);
-}
+// @Component({
+//   selector: 'my-app',
+//   template: `: {{interval$ | async}}`
+// })
+// export class AppComponent {
+//   interval$ = interval(1000);
+// }
 
 
