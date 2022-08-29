@@ -12,7 +12,7 @@ export class AppComponent {
       this.condition=!this.condition;
   }
 
-  interval$ = interval(1000)
+  // interval$ = interval(1000)
 }
 
 // import { Component } from '@angular/core';
